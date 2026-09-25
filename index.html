@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebula Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator">
+    <div class="glow"></div>
+    <section class="display">
+      <div class="brand">NEBULA <span>CALC</span></div>
+      <div id="history" class="history"></div>
+      <div id="display" class="value">0</div>
+    </section>
+
+    <section class="keys">
+      <button class="utility" data-action="clear">AC</button>
+      <button class="utility" data-action="sign">±</button>
+      <button class="utility" data-action="percent">%</button>
+      <button class="operator" data-value="/">÷</button>
+
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button class="operator" data-value="*">×</button>
+
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button class="operator" data-value="-">−</button>
+
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button class="operator" data-value="+">+</button>
+
+      <button class="zero" data-value="0">0</button>
+      <button data-value=".">.</button>
+      <button class="equals" data-action="calculate">=</button>
+    </section>
+
+    <p class="hint">Keyboard ready · Try 12 × 8 =</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
